@@ -22,7 +22,7 @@ The Expenses Tracker App is a robust financial management solution developed usi
 ## Features
 - **User Authentication and Authorization:** Securely sign up, sign in, and access the app with built-in authentication and authorization.
 - **CRUD Operations:** Perform essential financial tracking actions such as adding, reading, updating, and deleting expenses.
-- **Filtering:** Utilize the filtering feature to efficiently sort and view expenses based on various criteria.
+- **Filtering:** Utilize the filtering feature to efficiently sort and view expenses based on various criteria.//
 
 ## Getting Started
 1. **Clone the Repository:**
