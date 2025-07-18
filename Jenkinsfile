@@ -76,8 +76,8 @@ pipeline {
         stage('Trivy Scan') {
             steps {
                 script{
-                sh 'Trivy image amitk4452/santa:latest'
-                echo 'Scan complete'
+                    sh 'trivy image amitk4452/santa:latest'
+                    echo 'Scan complete'
                 }
             }
         }
