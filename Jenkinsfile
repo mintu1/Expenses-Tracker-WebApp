@@ -69,17 +69,11 @@ pipeline {
                 script{
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
                         sh 'docker run -d -p 8081:8080 --name santa-app amitk4452/santa:latest'
+                        sh 'trivy image amitk4452/santa:latest'
                     }
                 }
             }
         }
-        stage('Trivy Scan') {
-            steps {
-                script{
-                    sh 'trivy image amitk4452/santa:latest'
-                    echo 'Scan complete'
-                }
-            }
-        }
+        
     }
 }
