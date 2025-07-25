@@ -70,6 +70,7 @@ pipeline {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
                         sh 'docker run -d -p 8081:8080 --name santa-app amitk4452/santa:latest'
                         sh 'trivy image amitk4452/santa:latest'
+                        
                     }
                 }
             }
